@@ -20,7 +20,7 @@ public class RepositoryPage extends BasePage {
 	private WebElement repositoryNameLink;
 	@FindBy(xpath = "//tr//span/a[contains(text(), '')]")
     WebElement itemElement;
-    @FindBy(xpath = "//tr//span/a[contains(text(), '')]")
+    @FindBy(xpath = "//table[contains()@class,'js-navigation-container')]/tbody[2]/tr[@class='js-navigation-item']           tr//span/a[contains(text(), '')]")
     private FileElement file;
 
     public RepositoryPage() {
